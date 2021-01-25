@@ -106,7 +106,7 @@ input, select, textarea {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
-			animation: none !important;
+			/* animation: none !important; */
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
@@ -4410,18 +4410,26 @@ input, select, textarea {
 					color: #555 !important;
 				}
 
+				@keyframes pulse {
+					from { transform: scale(1.2); color: #ddeeff; }
+					50% { transform: scale(0.35); color: #223355; }
+					to { transform: scale(1.2);   color: #ddeeff; }
+				  }
+				  
+				  
 		.carousel nav a {
 			text-decoration: none;
 			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
+			transition: opacity 1s ease-in-out;
 			height: 100%;
-			opacity: 0.325;
+			opacity: 100%;
 			position: absolute;
 			top: 0;
-			width: 8rem;
-			color: #fff !important;
+			width: 18rem;
+			color: #ddeeff;
+			box-shadow: 1px, 3px, 3px, darkgrey;
 		}
 
 			.carousel nav a:before {
@@ -4471,8 +4479,12 @@ input, select, textarea {
 				}
 
 			.carousel nav a:hover {
-				opacity: 1;
+				opacity: 0.8;
+				animation-name: pulse;
+				animation-duration: 2.6s;
+				animation-iteration-count: infinite;
 			}
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -4507,9 +4519,8 @@ input, select, textarea {
 				.carousel nav a.next {
 					right: -3rem;
 				}
-
 		}
-
+		 
 		@media screen and (max-width: 736px) {
 
 			.carousel article {
