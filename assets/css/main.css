@@ -2060,8 +2060,8 @@ input, select, textarea {
 		input[type="button"].primary.accent4,
 		button.primary.accent4,
 		.button.primary.accent4 {
-			background-color: #6E81D0 !important;
-			color: #ffffff !important;
+			background-color: #aaaaaa !important;
+			color: #888888 !important;
 		}
 
 			input[type="submit"].primary.accent4:hover, input[type="submit"].primary.accent4:focus,
@@ -2073,7 +2073,8 @@ input, select, textarea {
 			button.primary.accent4:focus,
 			.button.primary.accent4:hover,
 			.button.primary.accent4:focus {
-				background-color: #8192d6 !important;
+				color: #cccccc !important;
+				background-color: #996666 !important;
 			}
 
 			input[type="submit"].primary.accent4:active,
