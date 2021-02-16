@@ -4081,7 +4081,7 @@ input, select, textarea {
 				opacity: 0.75;
 				color: #babacd;
 				text-shadow: #555588 2px 2px;
-				scale: 275%;
+				transform: scale(2.75);
 			}
 
 			.wrapper.style4 strong, .wrapper.style4 b {
