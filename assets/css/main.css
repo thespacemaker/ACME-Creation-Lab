@@ -4950,7 +4950,7 @@ input, select, textarea {
 /* Menu */
 
 	#menu {
-		background-color: #51CCA8;
+		background-color: rgba(85, 190, 160, 0.95);
 		color: #d4f2e9;
 		-moz-transform: translateX(20rem);
 		-webkit-transform: translateX(20rem);
@@ -4961,11 +4961,11 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #44c09c;
+		/* background: rgba(100, 222, 180, 0.9); */
 		box-shadow: none;
 		height: 100%;
 		max-width: 80%;
-		overflow-y: auto;
+		overflow-y: hidden;
 		padding: 3rem 2rem;
 		position: fixed;
 		right: 0;
@@ -5500,3 +5500,48 @@ input, select, textarea {
 	font-weight: 700;
 	color: red;
 }
+
+/* The Modal (background) */
+.modal {
+	scale: 105%;
+	display: none; /* Hidden by default */
+	position: absolute; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 23px; /* Location of the box */
+	padding-bottom: 0px;
+	left: 35px;
+	top: 23px;
+	width: auto; /* Full width */
+	height: fit-content; /* Full height */
+	overflow: hidden; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	border-radius: 10px;
+	background-color: rgba(150,210,180,1);
+	margin: 0 auto;
+	padding: 12px;
+	height:fit-content;
+	border: 2px inset rgba(155,188,188,0.9);
+	width: 100%;
+	/* box-shadow: rgba(233,244,255,0.65) 0px 0px 8px; */
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
