@@ -2682,7 +2682,8 @@ input, select, textarea {
 		}
 
 		.image img {
-			border-radius: 4px;
+			border: gray inset 3px;
+			border-radius: 50px;
 			display: block;
 			max-width: 100%;
 		}
