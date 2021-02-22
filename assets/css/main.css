@@ -5544,4 +5544,7 @@ input, select, textarea {
 	text-decoration: none;
 	cursor: pointer;
   }
-  
+  #kata div div{
+	  position: absolute;
+	  top: 0px;
+  }
